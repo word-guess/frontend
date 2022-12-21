@@ -1,0 +1,31 @@
+.card {
+  position: relative;
+}
+
+.body {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+
+.similarity {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: block;
+  border-radius: var(--chakra-radii-base);
+}
+
+.similarity_red500 {
+  background: #e53e3e;
+}
+
+.similarity_orange500 {
+  background: #dd6b20;
+}
+
+.similarity_green500 {
+  background: #38a169;
+}
