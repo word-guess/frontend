@@ -22,6 +22,7 @@ export const Home = () => {
           setIsLoading(true)
           setIsError(false)
           setLastWord(undefined)
+          setText(``)
           const word = await handleGuess({
             text: text.toLowerCase().replace(`ё`, `е`),
           })

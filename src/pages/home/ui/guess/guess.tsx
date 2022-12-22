@@ -30,7 +30,9 @@ export const Guess = ({ text, similarity = 0, rank }: GuessProps) => {
           )}
         />
         <CardBody className={styles.body}>
-          <Text casing={rank ? `capitalize` : undefined}>{text}</Text>
+          <Text casing={rank !== undefined ? `capitalize` : undefined}>
+            {text}
+          </Text>
           <Text>{rank}</Text>
         </CardBody>
       </Card>
