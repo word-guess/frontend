@@ -3,11 +3,10 @@
 }
 
 .title {
-  margin-bottom: 24px;
 }
 
 .input {
-  margin-bottom: 24px;
+  margin: 24px 0;
 }
 
 .lastWordWrapper {
@@ -25,13 +24,13 @@
   align-items: center;
 }
 
+.winCard {
+  margin-top: 24px;
+}
+
 @media (min-width: 768px) {
   .wrapper {
     margin: 100px auto 0;
     width: 450px;
-  }
-
-  .title {
-    margin-bottom: 48px;
   }
 }

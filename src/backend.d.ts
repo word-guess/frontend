@@ -23,4 +23,9 @@ declare namespace Paths {
       export type $200 = Components.Schemas.Guess[]
     }
   }
+  namespace UsersControllerCount {
+    namespace Responses {
+      export type $200 = number
+    }
+  }
 }

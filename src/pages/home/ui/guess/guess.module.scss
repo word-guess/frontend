@@ -29,3 +29,21 @@
 .similarity_green500 {
   background: #38a169;
 }
+
+.text {
+  font-weight: 500;
+}
+
+@media (prefers-color-scheme: light) {
+  .similarity_red500 {
+    background: #fc8181;
+  }
+
+  .similarity_orange500 {
+    background: #f6ad55;
+  }
+
+  .similarity_green500 {
+    background: #68d391;
+  }
+}
