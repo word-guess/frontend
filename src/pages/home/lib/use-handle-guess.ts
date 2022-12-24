@@ -21,11 +21,12 @@ export const useHandleGuess = () => {
               return newGuesses
             }
 
-            newGuesses.splice(
-              guesses.findIndex(({ rank }) => rank > data.rank),
-              0,
-              data,
-            )
+            const index = guesses.findIndex(({ rank }) => rank > data.rank)
+            if (index === -1) {
+              newGuesses.push(data)
+            } else {
+              newGuesses.splice(index, 0, data)
+            }
 
             return newGuesses
           },

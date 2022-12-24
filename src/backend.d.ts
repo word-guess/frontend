@@ -9,6 +9,10 @@ declare namespace Components {
       similarity: number
       rank: number
     }
+    export interface User {
+      id: number
+      createDate: string // date-time
+    }
   }
 }
 declare namespace Paths {
@@ -23,9 +27,9 @@ declare namespace Paths {
       export type $200 = Components.Schemas.Guess[]
     }
   }
-  namespace UsersControllerCount {
+  namespace UsersControllerMe {
     namespace Responses {
-      export type $200 = number
+      export type $200 = Components.Schemas.User
     }
   }
 }
