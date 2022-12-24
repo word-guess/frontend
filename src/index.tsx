@@ -8,8 +8,8 @@ import { backendSWRFetcher } from 'shared/api'
 
 const theme = extendTheme({
   config: {
+    initialColorMode: 'system',
     useSystemColorMode: true,
-    colorModeManager: null,
   },
 })
 
